@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7B4CECCE-5CE0-03AF-0CDD-EDFC76A950A4}</ProjectGuid>
+    <ProjectGuid>{66F38F01-1796-17A4-D3BC-065E23EBE621}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -140,6 +140,7 @@
      <Compile Include="Assets\Scripts\CameraOrbit.cs" />
      <Compile Include="Assets\Scripts\CameraOrbit2.cs" />
      <Compile Include="Assets\Scripts\EscapeToQuit.cs" />
+     <Compile Include="Assets\Scripts\Orbit.cs" />
      <Compile Include="Assets\Scripts\clicking.cs" />
      <None Include="Assets\SabreCSG-master\Shaders\Handle.shader" />
      <None Include="Assets\SabreCSG-master\Shaders\Line.shader" />
@@ -167,7 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{DBE47D72-CD1C-D56E-DA54-7F5A826369DF}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{5C6CE050-7742-8BA7-C33A-6A7BB500409F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
