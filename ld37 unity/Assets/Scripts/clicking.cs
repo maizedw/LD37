@@ -41,7 +41,7 @@ public class clicking : MonoBehaviour {
 		Ray ray = Camera.main.ScreenPointToRay (screenPos);
 		RaycastHit hit;
 		if (Physics.Raycast (ray, out hit, 100)) {
-			Debug.DrawLine (ray.origin, hit.point, Color.green, 5);
+			//Debug.DrawLine (ray.origin, hit.point, Color.green, 5);
 //			Renderer r = hit.collider.gameObject.GetComponent<Renderer> ();
 
 			//float randomNum = Random.value;
@@ -52,18 +52,18 @@ public class clicking : MonoBehaviour {
 			if (aM != null) { 
 				if (aM.colour != Color.white) {
 					aM.colour = Color.white;
-				} else if (hit.collider.gameObject.CompareTag ("cube")) { //cubes are greeny blue
+				} else if (hit.collider.gameObject.CompareTag ("mouth")) { //cubes are greeny blue
 					aM.colour = new Color (0, Random.Range (0.5f, 1), Random.Range (0, 0.5f));
-				} else if (hit.collider.gameObject.CompareTag ("sphere")) { //spheres are really light blue to pink
+				} else if (hit.collider.gameObject.CompareTag ("cube")) { //spheres are really light blue to pink
 					aM.colour = new Color (0.7f, Random.Range (0.7f, 1), 1);
-				} else if (hit.collider.gameObject.CompareTag ("longsphere")) {//longspheres are light red
-					aM.colour = new Color (1, randomNum1, randomNum1);
-				} else if (hit.collider.gameObject.CompareTag ("ovalcapsule")) {//ovalcapsules are light green
-					aM.colour = new Color (randomNum1, 1, randomNum1);
-				} else if (hit.collider.gameObject.CompareTag ("rectangle")) {//rectangles dark red
-					aM.colour = new Color (1, randomNum2, randomNum2);
-				} else if (hit.collider.gameObject.CompareTag ("capsule")) {//capsules are reddy blue
-					aM.colour = new Color (randomNum1, 0, randomNum2);
+				} else if (hit.collider.gameObject.CompareTag ("noaudio")) {//longspheres are light red
+					aM.colour = new Color (0,0,0);
+			//	} else if (hit.collider.gameObject.CompareTag ("ovalcapsule")) {//ovalcapsules are light green
+			//		aM.colour = new Color (randomNum1, 1, randomNum1);
+			//	} else if (hit.collider.gameObject.CompareTag ("rectangle")) {//rectangles dark red
+			//		aM.colour = new Color (1, randomNum2, randomNum2);
+			//	} else if (hit.collider.gameObject.CompareTag ("capsule")) {//capsules are reddy blue
+			//		aM.colour = new Color (randomNum1, 0, randomNum2);
 				} else { //everything else is dark purple
 					aM.colour = new Color (Random.Range (0, 0.5f), 0, Random.Range (0, 0.5f));
 				}
